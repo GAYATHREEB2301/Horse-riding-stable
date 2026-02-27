@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | PURAVI Equestrian Stable</title>
+    <meta name="description"
+        content="Learn about PURAVI Equestrian Stable's history, mission, and dedication to world-class horsemanship." />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo" aria-label="PURAVI Home">
+            <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                    style="width: 100%; height: 100%; object-fit: contain;"></span>
+            <span class="logo-text">PURAVI</span>
+        </a>
+
+        <ul class="nav-links" role="navigation" aria-label="Main navigation">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="index2.html">Home 2</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="care.html">Stable & Care</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+        </ul>
+
+        <div class="nav-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+                title="Toggle light/dark mode">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb" id="themeThumb">
+                        <span id="themeIcon">🌙</span>
+                    </div>
+                </div>
+            </button>
+            <a href="login.html" class="nav-login">Login</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="index.html">Home 1</a>
+        <a href="index2.html">Home 2</a>
+        <a href="about.html" class="active">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="care.html">Stable & Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+        <div class="mobile-menu-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb">
+                        <span class="mobile-theme-icon">🌙</span>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- ABOUT HERO -->
+    <header class="about-hero">
+        <div class="about-hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Established 1998</p>
+            <h1 class="hero-title">Our <span>Legacy</span></h1>
+            <p class="hero-subtitle">Discover the heart and soul of PURAVI, where passion for horses defines every
+                moment.</p>
+        </div>
+    </header>
+
+    <!-- INTRODUCTION SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">The Sanctuary</p>
+                <h2 class="section-title">An Equestrian Haven in Puravi</h2>
+                <p class="section-desc">Nestled in the UNESCO World Heritage hills of Puravi, our stable is more than a
+                    facility—it is a sanctuary dedicated to the profound bond between horse and rider. Since 1998, we
+                    have provided an unparalleled environment where excellence in horsemanship meets the serenity of
+                    nature.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrapper animate-up">
+                    <img src="stable_exterior.png" alt="PURAVI Stables Overview" />
+                    <div class="about-image-badge">
+                        <span class="badge-number">25</span>
+                        <span class="badge-text">Years</span>
+                    </div>
+                </div>
+                <div class="about-content animate-up animate-up-delay-2">
+                    <p class="about-text">PURAVI stands as a beacon of equestrian excellence in Portugal. Spread across
+                        fifty acres of pristine natural landscape, our grounds feature state-of-the-art training arenas,
+                        meticulously maintained paddocks, and private forest trails. Every element of our architecture
+                        and landscape has been designed with the primary objective of ensuring the comfort, safety, and
+                        psychological well-being of our equine partners.</p>
+                    <p class="about-text">Our philosophy is built on the pillars of respect, patience, and technical
+                        precision. We believe that true horsemanship is an art form that requires a lifelong commitment
+                        to learning and listening. At PURAVI, we don't just teach people how to ride; we teach them how
+                        to understand the language of the horse, fostering a partnership that extends far beyond the
+                        arena's edge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <section class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" style="display: flex; justify-content: center;">Purpose & Direction</p>
+                <h2 class="section-title">Vision & Mission</h2>
+            </div>
+            <div class="mission-grid" style="grid-template-columns: 1fr 1fr; gap: 4rem; text-align: center;">
+                <div class="animate-up">
+                    <h3 class="feature-title"
+                        style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--accent-gold); text-align: center;">
+                        Our Vision</h3>
+                    <p class="about-text">To be recognized globally as a center of equestrian excellence where the
+                        ancient wisdom of classical horsemanship merges seamlessly with modern sports science. We
+                        envision a future where every rider at PURAVI serves as an ambassador for ethical equine
+                        treatment, demonstrating that competitive success and profound compassion are not mutually
+                        exclusive but are, in fact, complementary forces.</p>
+                    <p class="about-text">We strive to lead the industry in sustainable stable management and
+                        welfare-oriented training, setting a gold standard for equestrian facilities worldwide. Our
+                        vision includes the expansion of our community into a global network of dedicated equestrians
+                        who prioritize the horse's spirit above all else.</p>
+                </div>
+                <div class="animate-up animate-up-delay-1">
+                    <h3 class="feature-title"
+                        style="font-size: 1.8rem; margin-bottom: 1.5rem; color: var(--accent-gold); text-align: center;">
+                        Our Mission</h3>
+                    <p class="about-text">Our mission is to empower individuals through the transformative power of the
+                        horse. We are committed to providing world-class instruction that respects the physical and
+                        emotional limits of both animal and human. By maintaining a rigorous standard of care and
+                        education, we aim to preserve the rich equestrian heritage of Portugal while innovating for the
+                        modern athlete.</p>
+                    <p class="about-text">We dedicate ourselves to the continuous growth of our community, offering a
+                        supportive environment for riders of all backgrounds. From nurturing the dreams of young
+                        beginners to refining the precision of international competitors, our mission is to ensure every
+                        journey at PURAVI is marked by progress, joy, and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR JOURNEY -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" style="display: flex; justify-content: center;">Heritage</p>
+                <h2 class="section-title">Our Journey Through Time</h2>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto;" class="animate-up">
+                <p class="about-text" style="text-align: center; font-size: 1.1rem; line-height: 1.8;">The story of
+                    PURAVI began over two decades ago with a single horse and a dream to create a different kind of
+                    stable—one where the horse was more than an asset, but a true partner. Founded by the Miranda family
+                    in 1998, PURAVI has grown from a private training ground into Portugal's most respected equestrian
+                    academy.</p>
+                <p class="about-text" style="margin-top: 2rem;">In our early years, we focused on restoring the local
+                    land, ensuring that the natural trails of Puravi remained accessible for riders while protecting the
+                    delicate mountain ecosystem. By 2005, we introduced our first youth development program, which has
+                    since produced several national champions. Over the years, we have hosted numerous international
+                    clinics, bringing the world's most innovative trainers to our hills. Today, PURAVI stands as a
+                    testament to twenty-five years of dedication, surviving economic shifts and industry changes by
+                    never wavering from our core value: the well-being of the horse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR HORSES -->
+    <section class="section-padding"
+        style="background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" style="display: flex; justify-content: center;">The Heart of the Stable</p>
+                <h2 class="section-title">Our Equine Partners</h2>
+                <p class="section-desc">The true soul of PURAVI lives in our stalls and paddocks. Our equine family
+                    comprises some of the most talented and kind-natured horses in the country.</p>
+            </div>
+            <div class="about-grid" style="align-items: center;">
+                <div class="animate-up">
+                    <p class="about-text">We select our horses with extreme care, looking beyond pedigree for a specific
+                        combination of temperament, presence, and willingness. At PURAVI, we are proud to house a
+                        diverse roster ranging from the noble Lusitano—the pride of Portuguese heritage—to athletic
+                        Warmbloods and gentle school ponies. Each horse is considered an individual, with a custom
+                        training and care regimen designed to support their unique physical and emotional needs.</p>
+                    <p class="about-text">Our commitment to our horses extends for their entire lives. Many of our
+                        retired champions stay with us, serving as 'professors' for younger riders or simply enjoying
+                        the lush pastures they have earned. We believe that a horse who is well-rested, well-fed, and
+                        mentally engaged will always be a superior partner in the arena. Our horses aren't just animals;
+                        they are the heart of everything we do.</p>
+                </div>
+                <div class="about-image-wrapper animate-up animate-up-delay-1">
+                    <img src="gallery_1.png" alt="Elegance in Motion - Our Horses" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" style="display: flex; justify-content: center;">The PURAVI Advantage</p>
+                <h2 class="section-title">Why Choose PURAVI?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-up">
+                    <h3 class="feature-title">Elite Pedagogy</h3>
+                    <p class="feature-desc">Our instructional methods are rooted in classical principles but informed by
+                        modern sports psychology. We provide a structured curriculum that ensures no gaps in a rider's
+                        education, emphasizing balance, timing, and subtleness of cues.</p>
+                </div>
+                <div class="feature-card animate-up animate-up-delay-1">
+                    <h3 class="feature-title">Wholistic Welfare</h3>
+                    <p class="feature-desc">We go beyond standard boarding. Our horses enjoy scientific nutrition plans,
+                        daily turnout in social groups, and a low-stress environment that prevents stable vices and
+                        promotes longevity and athletic performance.</p>
+                </div>
+                <div class="feature-card animate-up animate-up-delay-2">
+                    <h3 class="feature-title">World-Class Facilities</h3>
+                    <p class="feature-desc">From our all-weather footing to our luxury rider lounge, PURAVI offers a
+                        high-end experience for both horse and human. Our infrastructure is constantly updated to
+                        include the latest technological advances in equestrian sport.</p>
+                </div>
+            </div>
+            <div class="about-text"
+                style="margin-top: 3rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;"
+                class="animate-up">
+                Choosing PURAVI means joining a legacy of winners who prioritize the process. We offer a community that
+                is as supportive as it is competitive, where the success of one rider is celebrated by all. Whether you
+                seek the thrill of the show ring or the quiet peace of a forest trail, PURAVI provides the setting, the
+                guidance, and the partner to make your dreams a reality.
+            </div>
+        </div>
+    </section>
+
+    <!-- SAFETY STANDARDS -->
+    <section class="section-padding" style="background: var(--gradient-dark); color: #fff;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" style="display: flex; justify-content: center; color: var(--accent-gold);">
+                    The Gold Standard</p>
+                <h2 class="section-title" style="color: #fff;">Safety & Excellence</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: center;">
+                <div class="animate-up">
+                    <p class="about-text" style="color: rgba(245, 236, 224, 0.8);">Safety is not a checklist at PURAVI;
+                        it is our foundation. We maintain a zero-compromise policy regarding the protection of our
+                        students and our staff. This begins with our horses—only those with proven, reliable
+                        temperaments are selected for our academy programs. Our instructors are all certified in First
+                        Aid and Equestrian Safety, undergoing regular re-evaluations to ensure they stay current with
+                        the latest risk management protocols.</p>
+                    <p class="about-text" style="color: rgba(245, 236, 224, 0.8); margin-top: 1.5rem;">Our facility
+                        management includes daily inspections of all tack, fencing, and surface footing. We utilize
+                        advanced security systems to monitor the grounds 24/7, and our emergency protocols are
+                        meticulously planned and regularly practiced. When you ride at PURAVI, you can focus entirely on
+                        your progress, knowing that every detail of your environment has been scrutinized for safety. We
+                        believe that true excellence can only be achieved when the mind is at ease.</p>
+                </div>
+                <div class="animate-up animate-up-delay-1">
+                    <div
+                        style="background: rgba(200, 150, 62, 0.1); border: 1px solid rgba(200, 150, 62, 0.3); padding: 3rem; border-radius: var(--radius-lg); text-align: center;">
+                        <h4
+                            style="font-family: 'Outfit', sans-serif; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold); margin-bottom: 2rem; text-align: center;">
+                            Safety Benchmarks</h4>
+                        <ul class="about-feature-list"
+                            style="gap: 1.5rem; display: inline-flex; flex-direction: column; align-items: flex-start; text-align: left;">
+                            <li class="about-feature-item" style="color: #fff;">✦ Certified Professional Instructors
+                            </li>
+                            <li class="about-feature-item" style="color: #fff;">✦ Bi-weekly Veterinary Health Checks
+                            </li>
+                            <li class="about-feature-item" style="color: #fff;">✦ Daily Tack & Equipment Inspections
+                            </li>
+                            <li class="about-feature-item" style="color: #fff;">✦ 24/7 Monitored Facility Security</li>
+                            <li class="about-feature-item" style="color: #fff;">✦ All-Weather Professional Footing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY GROWTH -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow" style="display: flex; justify-content: center;">Beyond the Ring</p>
+                <h2 class="section-title">Community & Growth</h2>
+            </div>
+            <div style="max-width: 900px; margin: 0 auto;" class="animate-up">
+                <p class="about-text"
+                    style="text-align: center; font-size: 1.2rem; font-style: italic; color: var(--accent-gold);">"At
+                    PURAVI, we don't just build riders; we build a community that shares a lifelong passion for the
+                    equine spirit."</p>
+                <p class="about-text" style="margin-top: 2rem;">Growth at our stable is measured not just in ribbons and
+                    trophies, but in the deepening of character. We take immense pride in seeing our students develop
+                    responsibility, empathy, and resilience through their work with the horses. Our community extends
+                    beyond the lesson hours, with regular social gatherings, educational seminars, and off-site
+                    excursions that bring our members closer together.</p>
+                <p class="about-text">We are also deeply committed to the growth of Puravi itself. We actively support
+                    local conservation efforts and provide employment and training opportunities for local youth
+                    interested in equestrian careers. Being part of PURAVI means being part of a larger ecosystem of
+                    care—one that respects the past, celebrates the present, and builds a sustainable future for the
+                    horse and the community alike. We invite you to grow with us, to learn from us, and to become a part
+                    of our enduring legacy.</p>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="signup.html" class="btn-primary">Become Part of the Legacy</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="nav-logo"
+                    style="height:40px; display:flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:1rem;">
+                    <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                            style="width: 100%; height: 100%; object-fit: contain;"></span>
+                    <span class="logo-text">PURAVI</span>
+                </a>
+                <p class="footer-brand-desc">Premier equestrian stable nestled in the magical hills of Puravi, Portugal.
+                    Passionate about horses, dedicated to riders.</p>
+                <div class="footer-social">
+                    <a href="#">📸</a><a href="#">📘</a><a href="#">▶️</a><a href="#">🐦</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="care.html">Stable & Care</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Contact</h4>
+                <div class="footer-contact-item">Quinta das Estácas, 2710-582 Puravi, Portugal</div>
+                <div class="footer-contact-item">+351 219 100 500</div>
+                <div class="footer-contact-item">info@puravi-stable.pt</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 PURAVI Equestrian Stable. All rights reserved.</span>
+            <span>Crafted with passion 🐴</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

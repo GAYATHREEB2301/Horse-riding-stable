@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | PURAVI Equestrian Stable</title>
+    <meta name="description" content="Get in touch with PURAVI Equestrian Stable. We'd love to hear from you." />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo" aria-label="PURAVI Home">
+            <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                    style="width: 100%; height: 100%; object-fit: contain;"></span>
+            <span class="logo-text">PURAVI</span>
+        </a>
+
+        <ul class="nav-links" role="navigation" aria-label="Main navigation">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="index2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="care.html">Stable & Care</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+
+
+        </ul>
+
+        <div class="nav-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+                title="Toggle light/dark mode">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb" id="themeThumb">
+                        <span id="themeIcon">🌙</span>
+                    </div>
+                </div>
+            </button>
+            <a href="login.html" class="nav-login">Login</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="index.html">Home 1</a>
+        <a href="index2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="care.html">Stable & Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+        <div class="mobile-menu-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb">
+                        <span class="mobile-theme-icon">🌙</span>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTACT BANNER -->
+    <header class="section-padding"
+        style="margin-top:72px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('contact_banner.png'); background-size: cover; background-position: center; height: 350px; display: flex; align-items: center; justify-content: center; color: #fff;">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-size: 4rem;">Get <span>In Touch</span></h1>
+            <p class="hero-subtitle">We would love to welcome you to our stables.</p>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding">
+        <div class="container contact-wrapper">
+            <div class="contact-info-card animate-up">
+                <p class="section-eyebrow" style="color: var(--accent-gold);">Contact Details</p>
+                <h2 class="section-title" style="text-align: left; color: #fff; margin-bottom: 2rem;">Visit PURAVI</h2>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <p
+                        style="text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; opacity: 0.6; margin-bottom: 0.5rem;">
+                        Our Home</p>
+                    <p style="font-size: 1.1rem;">Quinta das Estácas, 2710-582<br>Puravi, Portugal</p>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <p
+                        style="text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; opacity: 0.6; margin-bottom: 0.5rem;">
+                        Direct Calls</p>
+                    <p style="font-size: 1.1rem;">+351 219 100 500</p>
+                </div>
+
+                <div style="margin-bottom: 2.5rem;">
+                    <p
+                        style="text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; opacity: 0.6; margin-bottom: 0.5rem;">
+                        Email Us</p>
+                    <p style="font-size: 1.1rem;">info@puravi-stable.pt</p>
+                </div>
+
+                <div class="footer-social" style="justify-content: flex-start; margin-top: 3rem;">
+                    <a href="#"
+                        style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #fff;">📸</a>
+                    <a href="#"
+                        style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #fff;">📘</a>
+                    <a href="#"
+                        style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: #fff;">▶️</a>
+                </div>
+            </div>
+
+            <div class="contact-form-card animate-up animate-up-delay-1">
+                <form id="contactForm">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="form-group" style="text-align: left;">
+                            <label style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; opacity: 0.7;">First
+                                Name</label>
+                            <input type="text" placeholder="John"
+                                style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--bg-primary); color: var(--text-primary);">
+                        </div>
+                        <div class="form-group" style="text-align: left;">
+                            <label style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; opacity: 0.7;">Last
+                                Name</label>
+                            <input type="text" placeholder="Doe"
+                                style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--bg-primary); color: var(--text-primary);">
+                        </div>
+                    </div>
+                    <div class="form-group" style="text-align: left; margin-bottom: 1.5rem;">
+                        <label style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; opacity: 0.7;">Email
+                            Address</label>
+                        <input type="email" placeholder="john@example.com"
+                            style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--bg-primary); color: var(--text-primary);">
+                    </div>
+                    <div class="form-group" style="text-align: left; margin-bottom: 2rem;">
+                        <label style="display: block; font-size: 0.8rem; margin-bottom: 0.5rem; opacity: 0.7;">Your
+                            Message</label>
+                        <textarea placeholder="How can we help you?" rows="5"
+                            style="width: 100%; padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border); background: var(--bg-primary); color: var(--text-primary); resize: vertical;"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary"
+                        style="width: 100%; justify-content: center; padding: 1.25rem;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="nav-logo"
+                    style="height:40px; display:flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:1rem;">
+                    <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                            style="width: 100%; height: 100%; object-fit: contain;"></span>
+                    <span class="logo-text">PURAVI</span>
+                </a>
+                <p class="footer-brand-desc">Premier equestrian stable nestled in the magical hills of Puravi, Portugal.
+                    Passionate about horses, dedicated to riders.</p>
+                <div class="footer-social">
+                    <a href="#">📸</a><a href="#">📘</a><a href="#">▶️</a><a href="#">🐦</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="care.html">Stable & Care</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Contact</h4>
+                <div class="footer-contact-item">Quinta das Estácas, 2710-582 Puravi, Portugal</div>
+                <div class="footer-contact-item">+351 219 100 500</div>
+                <div class="footer-contact-item">info@puravi-stable.pt</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 PURAVI Equestrian Stable. All rights reserved.</span>
+            <span>Crafted with passion 🐴</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

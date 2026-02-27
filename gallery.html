@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | PURAVI Equestrian Stable</title>
+    <meta name="description"
+        content="View the beauty and spirit of PURAVI Equestrian Stable through our gallery of horses and riders." />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo" aria-label="PURAVI Home">
+            <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                    style="width: 100%; height: 100%; object-fit: contain;"></span>
+            <span class="logo-text">PURAVI</span>
+        </a>
+
+        <ul class="nav-links" role="navigation" aria-label="Main navigation">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="index2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="care.html">Stable & Care</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+        </ul>
+
+        <div class="nav-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+                title="Toggle light/dark mode">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb" id="themeThumb">
+                        <span id="themeIcon">🌙</span>
+                    </div>
+                </div>
+            </button>
+            <a href="login.html" class="nav-login">Login</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="index.html">Home 1</a>
+        <a href="index2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="care.html">Stable & Care</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+        <div class="mobile-menu-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb">
+                        <span class="mobile-theme-icon">🌙</span>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- GALLERY PAGE CONTENT -->
+    <main class="section-padding" style="margin-top: 72px;">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">The Collection</p>
+                <h2 class="section-title">A Visual Journey</h2>
+                <p class="section-desc">Witness the elegance, strength, and daily life at our premier equestrian
+                    facility.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item animate-up">
+                    <img src="gallery_1.png" alt="Black horse portrait" />
+                    <div class="gallery-overlay">
+                        <div>
+                            <p style="font-weight: 600; font-size: 1.1rem;">Elegance in Motion</p>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Portrait series · 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item animate-up animate-up-delay-1">
+                    <img src="gallery_2.png" alt="Horse jumping" />
+                    <div class="gallery-overlay">
+                        <div>
+                            <p style="font-weight: 600; font-size: 1.1rem;"> Athletic Grace</p>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Competition Prep · 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item animate-up animate-up-delay-2">
+                    <img src="hero_horse.png" alt="Galloping horse" />
+                    <div class="gallery-overlay">
+                        <div>
+                            <p style="font-weight: 600; font-size: 1.1rem;">Golden Hour Run</p>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">The Fields · 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item animate-up">
+                    <img src="stable_exterior.png" alt="Stable entrance" />
+                    <div class="gallery-overlay">
+                        <div>
+                            <p style="font-weight: 600; font-size: 1.1rem;">The Sanctuary</p>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Facility View · 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item animate-up animate-up-delay-1">
+                    <img src="horse_training.png" alt="Traing session" />
+                    <div class="gallery-overlay">
+                        <div>
+                            <p style="font-weight: 600; font-size: 1.1rem;">Quiet Discipline</p>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Morning Academy · 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item animate-up animate-up-delay-2">
+                    <img src="about_mission.png" alt="Instructor and student" />
+                    <div class="gallery-overlay">
+                        <div>
+                            <p style="font-weight: 600; font-size: 1.1rem;">The Dialogue</p>
+                            <p style="font-size: 0.8rem; opacity: 0.8;">Mastery series · 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="nav-logo"
+                    style="height:40px; display:flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:1rem;">
+                    <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                            style="width: 100%; height: 100%; object-fit: contain;"></span>
+                    <span class="logo-text">PURAVI</span>
+                </a>
+                <p class="footer-brand-desc">Premier equestrian stable nestled in the magical hills of Puravi, Portugal.
+                    Passionate about horses, dedicated to riders.</p>
+                <div class="footer-social">
+                    <a href="#">📸</a><a href="#">📘</a><a href="#">▶️</a><a href="#">🐦</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="care.html">Stable & Care</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Contact</h4>
+                <div class="footer-contact-item">Quinta das Estácas, 2710-582 Puravi, Portugal</div>
+                <div class="footer-contact-item">+351 219 100 500</div>
+                <div class="footer-contact-item">info@puravi-stable.pt</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 PURAVI Equestrian Stable. All rights reserved.</span>
+            <span>Crafted with passion 🐴</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

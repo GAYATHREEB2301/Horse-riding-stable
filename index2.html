@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PURAVI Equestrian Stable | Services & Experience</title>
+    <meta name="description"
+        content="Discover PURAVI's world-class equestrian services – riding lessons, boarding, trail excursions, and premium membership plans." />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo" aria-label="PURAVI Home">
+            <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                    style="width: 100%; height: 100%; object-fit: contain;"></span>
+            <span class="logo-text">PURAVI</span>
+        </a>
+
+        <ul class="nav-links" role="navigation" aria-label="Main navigation">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="index2.html" class="active" aria-current="page">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="care.html">Stable & Care</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+        </ul>
+
+        <div class="nav-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+                title="Toggle light/dark mode">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb" id="themeThumb">
+                        <span id="themeIcon">🌙</span>
+                    </div>
+                </div>
+            </button>
+            <a href="login.html" class="nav-login">Login</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="index.html">Home 1</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="care.html">Stable & Care</a>
+        <a href="login.html" class="nav-login">Login</a>
+        <div class="mobile-menu-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb">
+                        <span class="mobile-theme-icon">🌙</span>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- SERVICES HERO -->
+    <section class="services-hero" aria-label="Services hero banner">
+        <div class="services-hero-bg"></div>
+        <div class="services-hero-overlay"></div>
+        <div class="services-hero-content">
+
+            <h1 class="services-hero-title">Elevate Your<br><em>Equestrian Journey</em></h1>
+            <p class="services-hero-sub">Curated programs and premium facilities designed for riders who demand
+                excellence.</p>
+        </div>
+    </section>
+
+    <!-- SERVICE CARDS -->
+    <section class="services-section" id="services" aria-label="Service highlights">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">What We Provide</p>
+                <h2 class="section-title">Our Signature Programmes</h2>
+                <p class="section-desc">Every service at PURAVI is crafted with deep respect for horses and an
+                    unwavering commitment to rider development.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <img class="service-card-img" src="horse_training.png" alt="Professional riding lessons at PURAVI"
+                        loading="lazy" />
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <span class="service-card-icon">🐴</span>
+                        <h3 class="service-card-title">Riding Academy</h3>
+                        <p class="service-card-desc">From first-time riders to advanced equestrians — structured,
+                            progressive lessons with certified trainers.</p>
+                        <a href="login.html" class="service-card-link">
+                            Enrol Now
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img class="service-card-img" src="horse_services.png" alt="Premium horse boarding at PURAVI"
+                        loading="lazy" />
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <span class="service-card-icon">🌿</span>
+                        <h3 class="service-card-title">Elite Boarding</h3>
+                        <p class="service-card-desc">Luxury stabling with expert nutrition management, daily grooming,
+                            and 24-hour veterinary support.</p>
+                        <a href="login.html" class="service-card-link">
+                            Learn More
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img class="service-card-img" src="hero_horse.png" alt="Trail riding excursions at PURAVI"
+                        loading="lazy" />
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-content">
+                        <span class="service-card-icon">🌄</span>
+                        <h3 class="service-card-title">Trail Excursions</h3>
+                        <p class="service-card-desc">Guided rides through Puravi's enchanting forests and rolling hills
+                            — an experience beyond the arena.</p>
+                        <a href="login.html" class="service-card-link">
+                            Book a Trail
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE STRIP -->
+    <section class="experience-strip" id="experience" aria-label="Our experience">
+        <div class="container">
+            <div class="experience-grid">
+                <div class="experience-image animate-up">
+                    <img src="stable_exterior.png" alt="PURAVI equestrian facility view" loading="lazy" />
+                    <div class="exp-badge">
+                        <span class="badge-number">25+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+
+                <div class="animate-up animate-up-delay-2">
+                    <p class="section-eyebrow" style="display: flex; justify-content: center;">The PURAVI Difference</p>
+                    <h2 class="section-title" style="text-align:left; font-size: clamp(1.75rem,4vw,2.75rem);">More Than
+                        a Stable — A Community</h2>
+                    <p class="about-text">At PURAVI, every rider is more than a student — they're part of a legacy. Our
+                        instructors don't just teach technique; they cultivate a deep, lifelong bond between horse and
+                        rider.</p>
+
+                    <div class="about-feature-list" style="margin-top:1.5rem;">
+                        <div class="about-feature-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Small class sizes for personalised attention
+                        </div>
+                        <div class="about-feature-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Horses selected for temperament and training
+                        </div>
+                        <div class="about-feature-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            International show competition preparation
+                        </div>
+                        <div class="about-feature-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            Beautiful facilities in a UNESCO World Heritage site area
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" style="margin-top:2rem;">
+                        <p class="testimonial-quote">"PURAVI completely transformed my relationship with horses. The
+                            instructors here are world-class, and the environment is simply magical."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <div class="author-name">Sofia Carvalho</div>
+                                <div class="author-role">Championship Rider · 4 Years at PURAVI</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING PLANS -->
+    <section class="pricing-section" id="pricing" aria-label="Membership plans">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Membership</p>
+                <h2 class="section-title">Choose Your Path</h2>
+                <p class="section-desc">Flexible membership plans designed to suit every rider's ambitions and
+                    lifestyle.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card animate-up animate-up-delay-1">
+                    <p class="pricing-tier">Explorer</p>
+                    <p class="pricing-price">€85</p>
+                    <p class="pricing-period">per month</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            4 group lessons/month
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Access to indoor arena
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            1 trail ride/month
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Community events access
+                        </li>
+                    </ul>
+                    <a href="signup.html" class="btn-pricing btn-pricing-outline">Get Started</a>
+                </div>
+
+                <div class="pricing-card featured animate-up animate-up-delay-2">
+                    <span class="pricing-badge">Most Popular</span>
+                    <p class="pricing-tier">Equestrian</p>
+                    <p class="pricing-price" style="color:var(--accent-gold);">€175</p>
+                    <p class="pricing-period" style="color:rgba(245,236,224,0.5);">per month</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            8 private lessons/month
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Full arena access daily
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            4 trail rides/month
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Nutrition & care included
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Competition preparation
+                        </li>
+                    </ul>
+                    <a href="signup.html" class="btn-pricing btn-pricing-solid">Join Now</a>
+                </div>
+
+                <div class="pricing-card animate-up animate-up-delay-3">
+                    <p class="pricing-tier">Champion</p>
+                    <p class="pricing-price">€320</p>
+                    <p class="pricing-period">per month</p>
+                    <ul class="pricing-features">
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Unlimited private lessons
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Dedicated horse assignment
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Unlimited trail rides
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            Full boarding included
+                        </li>
+                        <li class="pricing-feature-item">
+                            <span class="pricing-feature-check">✦</span>
+                            International show support
+                        </li>
+                    </ul>
+                    <a href="signup.html" class="btn-pricing btn-pricing-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar" aria-label="Key statistics">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Years of Excellence</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">120+</span>
+                <span class="stat-label">Expert Horses</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">3.5K+</span>
+                <span class="stat-label">Happy Riders</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">18</span>
+                <span class="stat-label">Championship Titles</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="nav-logo"
+                    style="height:40px; display:flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:1rem;">
+                    <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                            style="width: 100%; height: 100%; object-fit: contain;"></span>
+                    <span class="logo-text">PURAVI</span>
+                </a>
+                <p class="footer-brand-desc">Premier equestrian stable nestled in the magical hills of Puravi, Portugal.
+                    Passionate about horses, dedicated to riders.</p>
+                <div class="footer-social" aria-label="Social media links">
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="YouTube">▶️</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="care.html">Stable & Care</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Contact</h4>
+                <div class="footer-contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Quinta das Estácas, 2710-582 Puravi, Portugal
+                </div>
+                <div class="footer-contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +351 219 100 500
+                </div>
+                <div class="footer-contact-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    info@puravi-stable.pt
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 PURAVI Equestrian Stable. All rights reserved.</span>
+            <span>Crafted with passion for horses 🐴</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

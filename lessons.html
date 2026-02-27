@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lessons | PURAVI Equestrian Stable</title>
+    <meta name="description"
+        content="Explore riding programs at PURAVI stable. From beginner basics to competitive dressage and jumping." />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo" aria-label="PURAVI Home">
+            <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                    style="width: 100%; height: 100%; object-fit: contain;"></span>
+            <span class="logo-text">PURAVI</span>
+        </a>
+
+        <ul class="nav-links" role="navigation" aria-label="Main navigation">
+            <li><a href="index.html">Home 1</a></li>
+            <li><a href="index2.html">Home 2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lessons.html" class="active">Lessons</a></li>
+            <li><a href="care.html">Stable & Care</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+
+        </ul>
+
+        <div class="nav-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+                title="Toggle light/dark mode">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb" id="themeThumb">
+                        <span id="themeIcon">🌙</span>
+                    </div>
+                </div>
+            </button>
+            <a href="login.html" class="nav-login">Login</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="index.html">Home 1</a>
+        <a href="index2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html" class="active">Lessons</a>
+        <a href="care.html">Stable & Care</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="nav-login">Login</a>
+        <div class="mobile-menu-controls">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                <div class="theme-toggle-track">
+                    <div class="theme-toggle-thumb">
+                        <span class="mobile-theme-icon">🌙</span>
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <!-- LESSONS HERO -->
+    <header class="lessons-hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Expert Training</p>
+            <h1 class="hero-title">Riding <span>Academy</span></h1>
+            <p class="hero-subtitle">Meticulously designed programs for every stage of your riding career.</p>
+        </div>
+    </header>
+
+    <!-- PROGRAMS SECTION -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Our Programs</p>
+                <h2 class="section-title">Master the Art of Riding</h2>
+                <p class="section-desc">Tailored instruction from certified masters of the sport, focusing on safety,
+                    technique, and horse-rider synergy.</p>
+            </div>
+
+            <div class="programs-grid">
+                <div class="program-card animate-up">
+                    <span class="program-icon">🌱</span>
+                    <h3 class="feature-title">Foundations Program</h3>
+                    <p class="feature-desc">Perfect for beginners. Learn the basics of grooming, tacking, and
+                        fundamental riding techniques in a safe, supportive environment.</p>
+                    <a href="signup.html" class="btn-outline mt-2"
+                        style="color: var(--text-primary); border-color: var(--border);">Enquire Now</a>
+                </div>
+
+                <div class="program-card animate-up animate-up-delay-1">
+                    <span class="program-icon">🏅</span>
+                    <h3 class="feature-title">Competitive Dressage</h3>
+                    <p class="feature-desc">Refine your aids and patterns with our advanced dressage training, focusing
+                        on precision, harmony, and fluid movement.</p>
+                    <a href="signup.html" class="btn-outline mt-2"
+                        style="color: var(--text-primary); border-color: var(--border);">Enquire Now</a>
+                </div>
+
+                <div class="program-card animate-up animate-up-delay-2">
+                    <span class="program-icon">🏇</span>
+                    <h3 class="feature-title">Show Jumping</h3>
+                    <p class="feature-desc">From ground poles to grand prix heights. Develop your timing, eye, and
+                        confidence over fences with our expert jumping coaches.</p>
+                    <a href="signup.html" class="btn-outline mt-2"
+                        style="color: var(--text-primary); border-color: var(--border);">Enquire Now</a>
+                </div>
+
+                <div class="program-card animate-up animate-up-delay-3">
+                    <span class="program-icon">🌲</span>
+                    <h3 class="feature-title">Trail Excursions</h3>
+                    <p class="feature-desc">Guided scenic trail rides through the stunning landscapes of Puravi's hills
+                        and forests. Unforgettable experiences for all levels.</p>
+                    <a href="signup.html" class="btn-outline mt-2"
+                        style="color: var(--text-primary); border-color: var(--border);">Enquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILS SECTION -->
+    <section class="section-padding" style="background: var(--bg-secondary);">
+        <div class="container about-grid">
+            <div class="about-content animate-up">
+                <h2 class="section-title" style="text-align: left;">What to Expect</h2>
+                <p class="about-text">Every lesson at PURAVI is a structured 45-minute session preceded by 15 minutes of
+                    preparation. We believe that riders should be involved in the care of their horses from start to
+                    finish.</p>
+                <ul class="about-feature-list" style="margin: 2rem 0;">
+                    <li class="about-feature-item">✦ Private or Small Group (Max 3) sessions</li>
+                    <li class="about-feature-item">✦ Video analysis for advanced students</li>
+                    <li class="about-feature-item">✦ Assigned horse based on rider's goals</li>
+                    <li class="about-feature-item">✦ Regular progress evaluations</li>
+                </ul>
+                <a href="signup.html" class="btn-primary">Book Your First Lesson</a>
+            </div>
+            <div class="about-image-wrapper animate-up animate-up-delay-2">
+                <img src="horse_training.png" alt="Riding session" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-label="Site footer">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" class="nav-logo"
+                    style="height:40px; display:flex; align-items:center; gap:10px; text-decoration:none; margin-bottom:1rem;">
+                    <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
+                            style="width: 100%; height: 100%; object-fit: contain;"></span>
+                    <span class="logo-text">PURAVI</span>
+                </a>
+                <p class="footer-brand-desc">Premier equestrian stable nestled in the magical hills of Puravi, Portugal.
+                    Passionate about horses, dedicated to riders.</p>
+                <div class="footer-social">
+                    <a href="#">📸</a><a href="#">📘</a><a href="#">▶️</a><a href="#">🐦</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index2.html">Home 2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="care.html">Stable & Care</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Explore</h4>
+                <ul class="footer-links">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-col-title">Contact</h4>
+                <div class="footer-contact-item">Quinta das Estácas, 2710-582 Puravi, Portugal</div>
+                <div class="footer-contact-item">+351 219 100 500</div>
+                <div class="footer-contact-item">info@puravi-stable.pt</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 PURAVI Equestrian Stable. All rights reserved.</span>
+            <span>Crafted with passion 🐴</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
