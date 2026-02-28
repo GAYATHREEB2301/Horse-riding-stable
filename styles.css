@@ -597,7 +597,7 @@ ul {
 
 .hero-subtitle {
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: 1.05rem;
     font-weight: 300;
     color: rgba(245, 236, 224, 0.85);
     margin-bottom: 2.5rem;
@@ -749,7 +749,7 @@ ul {
 
 .section-desc {
     font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--text-muted);
     max-width: 560px;
     margin: 0 auto;
@@ -865,7 +865,7 @@ ul {
 }
 
 .feature-desc {
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     color: var(--text-muted);
     line-height: 1.75;
 }
@@ -926,7 +926,7 @@ ul {
 }
 
 .about-text {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
     line-height: 1.85;
     margin-bottom: 1.5rem;
@@ -1211,7 +1211,7 @@ ul {
 }
 
 .service-card-desc {
-    font-size: 0.875rem;
+    font-size: 1.05rem;
     color: rgba(245, 236, 224, 0.75);
     line-height: 1.65;
     max-height: 0;
@@ -1310,7 +1310,7 @@ ul {
 
 .testimonial-quote {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-style: italic;
     color: rgba(245, 236, 224, 0.85);
     line-height: 1.7;
@@ -2073,7 +2073,7 @@ ul {
 }
 
 .purpose-card .about-text {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.7;
     margin-bottom: 1.5rem;
     text-align: left;
