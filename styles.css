@@ -518,6 +518,7 @@ ul {
     position: relative;
     height: 100vh;
     min-height: 640px;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1068,6 +1069,7 @@ ul {
     position: relative;
     height: 70vh;
     min-height: 520px;
+    padding-top: 100px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -2026,6 +2028,7 @@ ul {
 .about-hero {
     height: 60vh;
     min-height: 450px;
+    padding-top: 100px;
     position: relative;
     display: flex;
     align-items: center;
@@ -2081,7 +2084,9 @@ ul {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('lessons_hero.png');
     background-size: cover;
     background-position: center;
-    height: 50vh;
+    height: 60vh;
+    min-height: 450px;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2130,7 +2135,7 @@ ul {
 ============================================ */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     padding: 2rem 0;
 }
@@ -2139,8 +2144,20 @@ ul {
     position: relative;
     border-radius: var(--radius-md);
     overflow: hidden;
-    aspect-ratio: 4/5;
+    aspect-ratio: 1 / 1;
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .gallery-item img {
