@@ -23,7 +23,17 @@
             style="background: transparent; min-height: auto; width: 100%; display: flex; justify-content: center;"
             aria-label="Login form">
             <div class="auth-form-inner"
-                style="background: var(--bg-secondary); padding: 3rem; border-radius: var(--radius-lg); box-shadow: 0 10px 40px rgba(0,0,0,0.2); border: 1px solid var(--border);">
+                style="background: var(--bg-secondary); padding: 3rem; border-radius: var(--radius-lg); box-shadow: 0 10px 40px rgba(0,0,0,0.2); border: 1px solid var(--border); position: relative;">
+                <div style="position: absolute; top: 1.5rem; right: 1.5rem;">
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"
+                        title="Toggle light/dark mode">
+                        <div class="theme-toggle-track">
+                            <div class="theme-toggle-thumb" id="themeThumb">
+                                <span id="themeIcon">🌙</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
                 <a href="index.html" class="auth-logo-link" aria-label="Back to home" style="justify-content: center;">
                     <span class="logo-icon"><img src="logo.png" alt="PURAVI Logo"
                             style="width: 100%; height: 100%; object-fit: contain;"></span>

@@ -202,43 +202,10 @@
                     </iframe>
                 </div>
 
-                <!-- Map overlay gradient bottom fade -->
-                <div class="map-overlay-fade"></div>
 
-                <!-- Bottom info strip -->
-                <div class="map-info-strip">
-                    <div class="map-info-chip">
-                        <span>🕐</span>
-                        <div>
-                            <div style="font-size:0.7rem; opacity:0.6; text-transform:uppercase; letter-spacing:1px;">
-                                Hours</div>
-                            <div style="font-size:0.9rem; font-weight:600;">Mon–Sun: 7 AM – 8 PM</div>
-                        </div>
-                    </div>
-                    <div class="map-divider"></div>
-                    <div class="map-info-chip">
-                        <span>📞</span>
-                        <div>
-                            <div style="font-size:0.7rem; opacity:0.6; text-transform:uppercase; letter-spacing:1px;">
-                                Call Us</div>
-                            <div style="font-size:0.9rem; font-weight:600;">+351 219 100 500</div>
-                        </div>
-                    </div>
-                    <div class="map-divider"></div>
-                    <div class="map-info-chip">
-                        <span>🗺️</span>
-                        <div>
-                            <div style="font-size:0.7rem; opacity:0.6; text-transform:uppercase; letter-spacing:1px;">
-                                Directions</div>
-                            <a href="https://www.openstreetmap.org/?mlat=38.755&mlon=-9.36#map=14/38.755/-9.36"
-                                target="_blank" rel="noopener"
-                                style="font-size:0.9rem; font-weight:600; color: var(--accent-gold); text-decoration:none;">
-                                Open in Maps ↗
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
+        </div>
         </div>
     </section>
 
@@ -324,68 +291,6 @@
                     rgba(212, 120, 55, 0.06) 100%);
             pointer-events: none;
             z-index: 1;
-        }
-
-        .map-overlay-fade {
-            position: absolute;
-            bottom: 72px;
-            /* just above the info strip */
-            left: 0;
-            right: 0;
-            height: 60px;
-            background: linear-gradient(to top, var(--bg-secondary, #0d1117) 0%, transparent 100%);
-            pointer-events: none;
-            z-index: 2;
-        }
-
-        .map-info-strip {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0;
-            padding: 1.1rem 2rem;
-            background: rgba(0, 0, 0, 0.40);
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            flex-wrap: wrap;
-        }
-
-        .map-info-chip {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 0.25rem 2rem;
-            font-size: 0.95rem;
-        }
-
-        .map-info-chip>span {
-            font-size: 1.4rem;
-        }
-
-        .map-divider {
-            width: 1px;
-            height: 36px;
-            background: rgba(255, 255, 255, 0.12);
-        }
-
-        @media (max-width: 640px) {
-            .map-frame-wrapper {
-                height: 300px;
-            }
-
-            .map-info-strip {
-                flex-direction: column;
-                gap: 0.75rem;
-                padding: 1rem;
-            }
-
-            .map-divider {
-                width: 80%;
-                height: 1px;
-            }
-
-            .map-info-chip {
-                padding: 0.25rem 0;
-            }
         }
     </style>
 
