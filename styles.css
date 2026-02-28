@@ -565,7 +565,7 @@ ul {
     font-weight: 500;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: var(--accent-gold);
+    color: #fff;
     margin-bottom: 1.5rem;
     opacity: 0.9;
 }
@@ -726,7 +726,7 @@ ul {
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--accent-gold);
+    color: var(--text-accent);
     margin-bottom: 1rem;
 }
 
@@ -1067,8 +1067,8 @@ ul {
 ============================================ */
 .services-hero {
     position: relative;
-    height: 70vh;
-    min-height: 520px;
+    height: 60vh;
+    min-height: 450px;
     padding-top: 100px;
     display: flex;
     align-items: flex-end;
@@ -2052,11 +2052,42 @@ ul {
 
 .mission-grid {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 6rem;
-    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.purpose-card {
+    text-align: center;
+    padding: 2rem;
+    height: 100%;
+}
+
+.purpose-card .feature-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--accent-gold);
+    text-align: center;
+}
+
+.purpose-card .about-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+@media (max-width: 991px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .purpose-card {
+        padding: 1rem 0;
+    }
 }
 
 .mission-quote {
@@ -2098,6 +2129,24 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     margin-top: 4rem;
+}
+
+/* ============================================
+   GALLERY PAGE
+============================================ */
+.gallery-hero {
+    height: 60vh;
+    min-height: 450px;
+    padding-top: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gallery_1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
 }
 
 .program-card {
