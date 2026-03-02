@@ -1820,6 +1820,30 @@ ul {
     animation-delay: 0.3s;
 }
 
+.animate-up-delay-4 {
+    animation-delay: 0.4s;
+}
+
+.animate-up-delay-5 {
+    animation-delay: 0.5s;
+}
+
+.animate-up-delay-6 {
+    animation-delay: 0.6s;
+}
+
+.animate-up-delay-7 {
+    animation-delay: 0.7s;
+}
+
+.animate-up-delay-8 {
+    animation-delay: 0.8s;
+}
+
+.animate-up-delay-9 {
+    animation-delay: 0.9s;
+}
+
 /* ============================================
    UTILITY CLASSES
 ============================================ */
@@ -1852,6 +1876,7 @@ ul {
 
     .features-grid,
     .services-grid,
+    .programs-grid,
     .pricing-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1892,6 +1917,7 @@ ul {
     }
 
     .features-grid,
+    .programs-grid,
     .pricing-grid {
         grid-template-columns: 1fr;
     }
@@ -2126,9 +2152,12 @@ ul {
 
 .programs-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
     margin-top: 4rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ============================================
